@@ -1,7 +1,7 @@
 import template from '../hbs/hello-item.hbs';
 import '../less/hello-item.less';
 
-export let App = new Marionette.Application();
+export const App = new Marionette.Application();
 
 App.addRegions({
 		headerRegion: '#header',
