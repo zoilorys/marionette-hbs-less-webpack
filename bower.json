@@ -1,0 +1,28 @@
+{
+  "name": "webpack-marionette",
+  "description": "",
+  "main": "webpack.config.js",
+  "authors": [
+    "Zoilorys <zoilorys@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "~1.8.3",
+    "backbone": "~1.2.3",
+    "backbone.marionette": "marionette#~2.4.4",
+    "backbone.wreqr": "~1.3.5",
+    "backbone.babysitter": "~0.1.10",
+    "jquery": "~2.1.4",
+    "json2-js": "~1.0.0"
+  }
+}

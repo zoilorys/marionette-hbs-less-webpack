@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hey, Webpack, it's Marionette</title>
+</head>
+<body>
+	<header id="header"></header>
+	<div id="main-app"></div>
+	<footer id="footer"></footer>
+	
+	<script id="hello-item" type="text/template">
+		<h1><%= name %></h1>
+		<button class="reload-button">Click</button>
+	</script>
+
+	<script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/json2-js/json2.js"></script>
+	<script type="text/javascript" src="bower_components/backbone/backbone-min.js"></script>
+	<script type="text/javascript" src="bower_components/backbone.wreqr/lib/backbone.wreqr.min.js"></script>
+	<script type="text/javascript" src="bower_components/backbone.babysitter/lib/backbone.babysitter.min.js"></script>
+	<script type="text/javascript" src="bower_components/backbone.marionette/lib/backbone.marionette.min.js"></script> 
+	<script type="text/javascript" src="bundle/bundle.js"></script>
+</body>
+</html>
