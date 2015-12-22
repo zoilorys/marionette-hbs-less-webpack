@@ -1,6 +1,3 @@
-import template from '../hbs/hello-item.hbs';
-import '../less/hello-item.less';
-
 export const App = new Marionette.Application();
 
 App.addRegions({
@@ -24,7 +21,7 @@ App.on('start', () => {
 
 App.Box = Marionette.ItemView.extend({
 	className: 'hello-item',
-	template: template,
+	template: Hub.templates.helloItem,
 	
 	events: {
 		'click button.reload-button': 'snap'
@@ -34,7 +31,7 @@ App.Box = Marionette.ItemView.extend({
 		App.footerRegion.show(
 			new App.Box({
 				model: new Backbone.Model({
-					name: 'NzzzSzI'
+					name: 'NIGH'
 				})
 			})
 		);

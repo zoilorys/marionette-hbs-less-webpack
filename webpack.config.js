@@ -20,14 +20,15 @@ module.exports = {
 			query: {
 				presets: ['es2015']
 			}
-		},
-		{
-			test: /\.less$/,
-			loader: 'style!css!less!'
-		},
-		{
-			test: /\.hbs$/,
-			loader: 'handlebars-loader'
 		}]
-	}
+	},
+	
+	plugins: [
+		new webpack.optimize.UglifyJsPlugin({
+			compress: {
+				warnings: false
+			},
+			mangle: true
+		})
+	]
 };
